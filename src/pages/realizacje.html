@@ -1,0 +1,38 @@
+---
+title: Realizacje – łazienki, kuchnie i mieszkania pod klucz | Gładko
+description: Zobacz łazienki, kuchnie i salony, które wykończyliśmy we Wrocławiu i okolicach: metraż, czas prac i zakres. Projekt demonstracyjny.
+page: realizacje
+script: gallery
+nav: realizacje
+---
+    <div class="container page-head">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <ol><li><a href="index.html">Start</a></li><li aria-current="page">Realizacje</li></ol>
+      </nav>
+      <h1>Realizacje</h1>
+      <p>Mieszkania, łazienki i kuchnie z ostatnich miesięcy. Przy każdej podajemy metraż, czas prac i zakres.</p>
+    </div>
+
+    <section class="container section-gallery" aria-labelledby="galeria-tytul">
+      <h2 class="visually-hidden" id="galeria-tytul">Galeria realizacji</h2>
+      <div class="filters" role="group" aria-label="Rodzaj realizacji">
+        <button class="filter-btn" type="button" data-category="wszystkie" aria-pressed="true">Wszystkie</button>
+        <button class="filter-btn" type="button" data-category="lazienki" aria-pressed="false">Łazienki</button>
+        <button class="filter-btn" type="button" data-category="kuchnie" aria-pressed="false">Kuchnie</button>
+        <button class="filter-btn" type="button" data-category="salony" aria-pressed="false">Salony</button>
+      </div>
+      <p class="hint" id="galeria-liczba" aria-live="polite"></p>
+      <div class="projects" id="galeria"></div>
+    </section>
+
+    <dialog class="lightbox" id="podglad" aria-labelledby="podglad-tytul">
+      <button class="icon-btn lightbox-close" type="button" aria-label="Zamknij podgląd">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="lightbox-inner">
+        <img src="data:," alt="">
+        <div class="lightbox-text"></div>
+      </div>
+    </dialog>
+
+    {{> cta}}

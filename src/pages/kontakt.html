@@ -1,0 +1,113 @@
+---
+title: Kontakt i bezpłatne oględziny | Gładko
+description: Umów bezpłatne oględziny i wycenę wykończenia mieszkania we Wrocławiu. Oddzwaniamy w ciągu jednego dnia roboczego. Projekt demonstracyjny.
+page: kontakt
+script: contact
+nav: kontakt
+---
+    <div class="container page-head">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <ol><li><a href="index.html">Start</a></li><li aria-current="page">Kontakt</li></ol>
+      </nav>
+      <h1>Umów bezpłatne oględziny</h1>
+      <p>Zostaw numer, a oddzwonimy w ciągu jednego dnia roboczego. Po oględzinach w ciągu 48 godzin wyślemy wycenę z harmonogramem.</p>
+    </div>
+
+    <div class="container contact-layout">
+      <div class="panel" id="formularz">
+        <form class="form-grid two" id="zgloszenie" novalidate>
+          <p class="estimate-note span-2" id="wycena" role="status"></p>
+          <div class="field">
+            <label for="f-name">Imię</label>
+            <input id="f-name" name="name" autocomplete="given-name" aria-describedby="f-name-error">
+            <span class="field-error" id="f-name-error"></span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Telefon</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="f-phone-error">
+            <span class="field-error" id="f-phone-error"></span>
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail <span class="hint">(opcjonalnie)</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="f-email-error">
+            <span class="field-error" id="f-email-error"></span>
+          </div>
+          <div class="field">
+            <label for="f-postal">Kod pocztowy</label>
+            <input id="f-postal" name="postal" inputmode="numeric" autocomplete="postal-code" placeholder="00-000" aria-describedby="f-postal-hint f-postal-error">
+            <span class="hint" id="f-postal-hint">Sprawdzimy, czy do Ciebie dojedziemy.</span>
+            <span class="field-error" id="f-postal-error"></span>
+          </div>
+          <div class="field">
+            <label for="f-area">Metraż <span class="hint">(m², opcjonalnie)</span></label>
+            <input id="f-area" name="area" type="number" inputmode="numeric" min="15" max="250" aria-describedby="f-area-error">
+            <span class="field-error" id="f-area-error"></span>
+          </div>
+          <div class="field">
+            <label for="f-visit">Termin oględzin <span class="hint">(opcjonalnie)</span></label>
+            <input id="f-visit" name="visit" type="date" aria-describedby="f-visit-hint f-visit-error">
+            <span class="hint" id="f-visit-hint">Od poniedziałku do soboty, od jutra do 60 dni naprzód.</span>
+            <span class="field-error" id="f-visit-error"></span>
+          </div>
+          <fieldset class="span-2">
+            <legend>Zakres prac</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="scope" value="sciany"><span>Gładzie i malowanie</span></label>
+              <label class="chip"><input type="checkbox" name="scope" value="podlogi"><span>Podłogi</span></label>
+              <label class="chip"><input type="checkbox" name="scope" value="lazienka"><span>Łazienka</span></label>
+              <label class="chip"><input type="checkbox" name="scope" value="kuchnia"><span>Kuchnia</span></label>
+              <label class="chip"><input type="checkbox" name="scope" value="drzwi"><span>Drzwi</span></label>
+              <label class="chip"><input type="checkbox" name="scope" value="elektryka"><span>Elektryka</span></label>
+            </div>
+          </fieldset>
+          <div class="field span-2">
+            <label for="f-message">Wiadomość <span class="hint">(opcjonalnie)</span></label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Np. mieszkanie od dewelopera, klucze odbieramy w marcu."></textarea>
+          </div>
+          <input type="hidden" name="estimate">
+          <div class="span-2">
+            <label class="checkbox"><input type="checkbox" id="f-consent" name="consent" aria-describedby="f-consent-error"> Zgadzam się na kontakt w sprawie wyceny. Dane wykorzystamy tylko w tym celu.</label>
+            <span class="field-error" id="f-consent-error"></span>
+          </div>
+          <div class="span-2">
+            <button class="btn btn-accent btn-block" type="submit">Wyślij zgłoszenie</button>
+            <p class="demo-note">To wersja demonstracyjna: formularz sprawdza dane, ale niczego nie wysyła.</p>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-aside" aria-label="Dane kontaktowe">
+        <div class="panel">
+          <h2>Wolisz zadzwonić?</h2>
+          <ul class="contact-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><a href="tel:+48710000000">71 000 00 00</a><br><span class="hint">pn.–pt. 8:00–17:00</span></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span><a href="mailto:biuro@gladko.example">biuro@gladko.example</a><br><span class="hint">odpowiadamy tego samego dnia</span></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>ul. Przykładowa 12, Wrocław<br><span class="hint">biuro i magazyn materiałów</span></span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Gdzie dojeżdżamy</h2>
+          <ul class="area-zones">
+            <li><span>Wrocław</span><span>gratis</span></li>
+            <li><span>Okolice (kody 55)</span><span>100 zł</span></li>
+            <li><span>Dolny Śląsk</span><span>od 40 m²</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="container">
+    <section class="article" id="projekt" aria-labelledby="projekt-title">
+      <h2 id="projekt-title">O projekcie</h2>
+      <p>To projekt demonstracyjny strony firmy usługowej. Firma Gładko, jej ceny, realizacje, opinie i dane kontaktowe są fikcyjne, a formularze niczego nie wysyłają. Ceny w kalkulatorze są przykładowe, choć zbliżone do stawek z 2026 roku.</p>
+      <p>Zdjęcia pochodzą z serwisu <a href="https://unsplash.com/">Unsplash</a> i są używane zgodnie z licencją Unsplash. Ich autorzy nie mają związku z projektem, a zdjęcia nie przedstawiają prawdziwych realizacji:</p>
+      <ul>
+        <li><a href="https://images.unsplash.com/photo-1741764014072-68953e93cd48">salon z aneksem</a> (zdjęcie na górze strony głównej)</li>
+        <li><a href="https://images.unsplash.com/photo-1724582586529-62622e50c0b3">minimalistyczny salon</a>, <a href="https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3">jasny salon</a></li>
+        <li><a href="https://images.unsplash.com/photo-1763485956310-55f3c0e822d5">łazienka w drewnie</a>, <a href="https://images.unsplash.com/photo-1771681278369-e2a5480b8c29">łazienka z marmurem</a>, <a href="https://images.unsplash.com/photo-1781344334947-60c704bafd51">łazienka z wanną</a></li>
+        <li><a href="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4">kuchnia w grafitach</a>, <a href="https://images.unsplash.com/photo-1502005097973-6a7082348e28">kuchnia otwarta na ogród</a>, <a href="https://images.unsplash.com/photo-1671197244266-73129c97c096">kuchnia z wyspą</a></li>
+        <li><a href="https://images.unsplash.com/photo-1523413363574-c30aa1c2a516">układanie płytek</a>, <a href="https://images.unsplash.com/photo-1599619585752-c3edb42a414c">malowanie</a>, <a href="https://images.unsplash.com/photo-1634586648651-f1fb9ec10d90">mieszkanie w remoncie</a></li>
+      </ul>
+      <p>Czcionki Bricolage Grotesque i Inter są hostowane razem ze stroną (licencja SIL Open Font License).</p>
+    </section>
+    </div>

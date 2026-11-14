@@ -1,0 +1,44 @@
+<section class="section" id="kalkulator" aria-labelledby="kalkulator-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Kalkulator</span>
+            <h2 id="kalkulator-title">Policz koszt wykończenia</h2>
+            <p>Szacunek z naszego cennika, z materiałami albo bez. Wiążącą cenę podajemy po bezpłatnych oględzinach.</p>
+          </div>
+        </div>
+        <div class="calc">
+          <form class="calc-form" id="kalkulator-form" novalidate>
+            <div class="field">
+              <label for="metraz">Metraż mieszkania</label>
+              <div class="range-row">
+                <input type="range" id="metraz-suwak" min="15" max="250" step="1" value="50" aria-label="Metraż mieszkania, suwak">
+                <span class="unit-input"><input id="metraz" name="area" type="number" inputmode="numeric" min="15" max="250" value="50"> m²</span>
+              </div>
+            </div>
+            <fieldset>
+              <legend>Zakres prac</legend>
+              <div class="toggle-cards">
+                <label class="toggle-card"><input type="checkbox" name="scope" value="sciany" checked><span><strong>Gładzie i malowanie</strong><small>ściany i sufity</small></span></label>
+                <label class="toggle-card"><input type="checkbox" name="scope" value="podlogi" checked><span><strong>Podłogi</strong><small>panele albo deska</small></span></label>
+                <label class="toggle-card"><input type="checkbox" name="scope" value="lazienka" checked><span><strong>Łazienka pod klucz</strong><small>płytki i biały montaż</small></span></label>
+                <label class="toggle-card"><input type="checkbox" name="scope" value="kuchnia" checked><span><strong>Kuchnia</strong><small>montaż zabudowy i płytki</small></span></label>
+                <label class="toggle-card"><input type="checkbox" name="scope" value="drzwi" checked><span><strong>Drzwi wewnętrzne</strong><small>z ościeżnicami</small></span></label>
+                <label class="toggle-card"><input type="checkbox" name="scope" value="elektryka" checked><span><strong>Elektryka</strong><small>osprzęt i oświetlenie</small></span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Standard wykończenia</legend>
+              <div class="segmented">
+                <label><input type="radio" name="standard" value="podstawowy"><span>Podstawowy</span></label>
+                <label><input type="radio" name="standard" value="standard" checked><span>Standard</span></label>
+                <label><input type="radio" name="standard" value="premium"><span>Premium</span></label>
+              </div>
+              <p class="hint segmented-note" id="standard-note">Najczęściej wybierany</p>
+            </fieldset>
+            <label class="switch"><input type="checkbox" name="materials" role="switch" checked><span>Z materiałami<small>Kupujemy materiały w hurtowni i dowozimy je na budowę.</small></span></label>
+          </form>
+          <div class="calc-result on-dark" id="kalkulator-wynik" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
