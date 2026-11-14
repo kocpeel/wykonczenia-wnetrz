@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Lets the publication be run again from the Actions tab, e.g. after Pages is switched on.
+  workflow_dispatch:
 
 permissions:
   contents: read
